@@ -12,7 +12,9 @@
     "@better-scroll/observe-dom": "^2.4.2",
     "axios": "^0.24.0",
     "better-scroll": "^2.4.2",
+    "cookie-parser": "^1.4.5",
     "core-js": "^3.6.5",
+    "create-keyframe-animation": "^0.1.0",
     "good-storage": "^1.1.1",
     "js-base64": "^3.7.2",
     "lyric-parser": "^1.0.1",
@@ -21,7 +23,8 @@
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vue3-lazy": "^1.0.0-alpha.1",
-    "vuex": "^4.0.0-0"
+    "vuex": "^4.0.0-0",
+    "xsrf": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -32,7 +35,6 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
-    "create-keyframe-animation": "^0.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.0.0",

@@ -43,7 +43,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .singer {
   position: fixed;
   width: 100%;

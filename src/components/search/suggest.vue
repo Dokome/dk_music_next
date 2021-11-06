@@ -118,12 +118,17 @@ export default {
       emit('select-song', song)
     }
 
+    function selectSinger(singer) {
+      emit('select-singer', singer)
+    }
+
     return {
       songs,
       singer,
       loadingText,
       loading,
       selectSong,
+      selectSinger,
       // use-pull-up-load
       rootRef,
       isPullUpLoad,

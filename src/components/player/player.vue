@@ -38,23 +38,25 @@
               </div>
             </div>
           </div>
-          <scroll class="middle-r" ref="lyricScrollRef" :style="middleRStyle">
-            <div class="lyric-wrapper">
-              <div v-if="currentLyric" ref="lyricListRef">
-                <p
-                  class="text"
-                  :class="{ current: currentLineNumber === index }"
-                  v-for="(line, index) in currentLyric.lines"
-                  :key="line.num"
-                >
-                  {{ line.txt }}
-                </p>
+          <div :style="middleRStyle" class="middle-r">
+            <scroll class="middle-r" ref="lyricScrollRef">
+              <div class="lyric-wrapper">
+                <div v-if="currentLyric" ref="lyricListRef">
+                  <p
+                    class="text"
+                    :class="{ current: currentLineNumber === index }"
+                    v-for="(line, index) in currentLyric.lines"
+                    :key="line.num"
+                  >
+                    {{ line.txt }}
+                  </p>
+                </div>
+                <div class="pure-music" v-show="pureMusicLyric">
+                  <p>{{ pureMusicLyric }}</p>
+                </div>
               </div>
-              <div class="pure-music" v-show="pureMusicLyric">
-                <p>{{ pureMusicLyric }}</p>
-              </div>
-            </div>
-          </scroll>
+            </scroll>
+          </div>
         </div>
         <div class="bottom">
           <div class="dot-wrapper">
